@@ -8,7 +8,7 @@ public class Environment : MonoBehaviour
     [SerializeField] GameObject cloudGroup;
     [SerializeField] float lengthOfCloudGroup = 140f;
 
-    // cache
+    // state
     Transform currentCloudGroup;
     Transform oldCloudGroup;
 

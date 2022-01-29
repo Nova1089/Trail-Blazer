@@ -12,9 +12,11 @@ public class PlatformSpawner : MonoBehaviour
     [SerializeField] int maxYDistanceFromLastEndPoint = 2;
     [SerializeField] int percentChanceToSpawnFireworks = 10;
 
+    // cache
+    Transform player;
+
     // state
     GameObject lastSpawnedPlatform;
-    Transform player;
 
     // Unity messages
     void Awake()
@@ -87,14 +89,14 @@ public class PlatformSpawner : MonoBehaviour
         }
     }
 
+    void SpawnHazard(Transform platformInstance)
+    {
+        Instantiate(hazard, SelectRandomChild(platformInstance));
+    }
+
     Transform SelectRandomChild(Transform parent)
     {
         int index = Random.Range(0, parent.childCount);
         return parent.GetChild(index);
-    }
-
-    private void SpawnHazard(Transform platformInstance)
-    {
-        GameObject fireworksInstance = Instantiate(hazard, SelectRandomChild(platformInstance));
     }
 } 

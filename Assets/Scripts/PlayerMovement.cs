@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        CheckForQuit();
         CheckIfGrounded();
         RunForrestRun();
         ProcessJump();
@@ -86,5 +87,13 @@ public class PlayerMovement : MonoBehaviour
     void Fly()
     {
         gravity = 0f;
+    }
+
+    void CheckForQuit()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
