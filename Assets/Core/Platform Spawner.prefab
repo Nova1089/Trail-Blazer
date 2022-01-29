@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1277909719831022962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277909719831022960}
+  - component: {fileID: 1277909719831022961}
+  m_Layer: 0
+  m_Name: Platform Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1277909719831022960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277909719831022962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277909719831022961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277909719831022962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32253688c9f76f149bde364c44158524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialSpawn: {fileID: 0}
+  platforms:
+  - {fileID: 418219117096206851, guid: 476baf1c3d0d70944b4ef2cb56013c4b, type: 3}
+  - {fileID: 3419973665322575515, guid: a64539cdcf056dc4095b9099c1112d4a, type: 3}
+  - {fileID: 7301554001592220186, guid: 5b173baff4ed41a4bb8a5839e3e07686, type: 3}
+  - {fileID: 1710250540456038709, guid: 492ac85135db71848b2efc75a7df98c7, type: 3}
+  - {fileID: 1710250540456038709, guid: 184ad6c8c76845d46afde50ddfec7fe9, type: 3}
+  - {fileID: 1710250540456038709, guid: bb2061ed0dfdfaf40a09b5f136fa269e, type: 3}
+  - {fileID: 1710250540456038709, guid: 1943ea17c32927940b3abad863efeb1e, type: 3}
+  - {fileID: 1710250540456038709, guid: 427127da45b23814b9f3c92852a941bb, type: 3}
+  - {fileID: 1710250540456038709, guid: 1562468d6ea57564e9df458b2615e440, type: 3}
+  - {fileID: 1710250540456038709, guid: c9c0f4d31adfa354ab65f44244d8c325, type: 3}
+  - {fileID: 1710250540456038709, guid: 613091e927bd2d74c821d1bce4646ae4, type: 3}
+  - {fileID: 1710250540456038709, guid: beb4c32ab3e2fe7498f594a56a38c013, type: 3}
+  - {fileID: 1710250540456038709, guid: c247f05fe3e7e1341a5e6b3f4cdef577, type: 3}
+  - {fileID: 1710250540456038709, guid: 84729869b0a4fbf419ebe04f5f6fbd8c, type: 3}
+  - {fileID: 1710250540456038709, guid: 520a185ff87c8e2419ca2460c0a340ed, type: 3}
+  - {fileID: 8647381691883788544, guid: 8ba588af5389f2440a125fe3e505b843, type: 3}
+  - {fileID: 8800330011496227745, guid: 2d62497c9f3dd9641a4f56f5d3bcb6c2, type: 3}
+  - {fileID: 9154074904760703392, guid: 0fb40e9eb8295824d87e450e241d9853, type: 3}
+  - {fileID: 9154074904760703392, guid: 088c9ab859f0de14ebcdcebdd53c16c8, type: 3}
+  - {fileID: 9154074904760703392, guid: 518251ecb654825409fdfc9d7e1bd591, type: 3}
+  spawnDistanceFromPlayer: 0
+  maxXDistanceFromLastEndPoint: 4
+  maxYDistanceFromLastEndPoint: 4
